@@ -1,0 +1,53 @@
+# ---------------------------------------------------
+# User information
+# ---------------------------------------------------
+user_id: 888
+user_name: 'Test'
+user_random_seed: 789
+
+# ---------------------------------------------------
+# Images Path
+# ---------------------------------------------------
+GAPED_positive_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/P/
+GAPED_neutral_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/N/
+buffer_stimuli_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/N/
+GAPED_snakes_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/Sn/
+GAPED_spiders_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/Sp/
+GAPED_human_concerns_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/H/
+GAPED_animal_concerns_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/A/
+
+# ---------------------------------------------------
+# Select images for the study phase
+# ---------------------------------------------------
+
+selected_positive_images: ['P001.bmp', 'P005.bmp', 'P008.bmp', 'P009.bmp', 'P014.bmp', 'P015.bmp', 'P016.bmp', 'P017.bmp', 'P018.bmp', 'P022.bmp', 'P027.bmp', 'P030.bmp', 'P031.bmp', 'P033.bmp', 'P035.bmp', 'P037.bmp', 'P042.bmp', 'P048.bmp', 'P054.bmp', 'P055.bmp']
+selected_neutral_images: ['N022.bmp', 'N023.bmp', 'N027.bmp', 'N030.bmp', 'N031.bmp', 'N032.bmp', 'N033.bmp', 'N034.bmp', 'N035.bmp', 'N036.bmp', 'N038.bmp', 'N039.bmp', 'N041.bmp', 'N043.bmp', 'N044.bmp', 'N045.bmp', 'N047.bmp', 'N061.bmp', 'N067.bmp', 'N072.bmp']
+selected_buffer_stimuli_images: ['N002.bmp', 'N004.bmp', 'N008.bmp', 'N013.bmp', 'N015.bmp', 'N017.bmp', 'N018.bmp', 'N021.bmp']
+#    selected_buffer_stimuli_images must have an even number of images.
+#    The first half of them will be used at the beginning, the other half at the end.
+selected_snake_images: ['Sn047.bmp', 'Sn054.bmp', 'Sn061.bmp', 'Sn062.bmp', 'Sn078.bmp']
+selected_spider_images: ['Sp026.bmp', 'Sp030.bmp', 'Sp036.bmp', 'Sp084.bmp', 'Sp087.bmp']
+selected_human_concerns_images: ['H009.bmp', 'H023.bmp', 'H026.bmp', 'H027.bmp', 'H034.bmp']
+selected_animal_concerns_images: ['A010.bmp', 'A037.bmp', 'A041.bmp', 'A047.bmp', 'A057.bmp']
+
+# ---------------------------------------------------
+# Additional images for the test phase
+# ---------------------------------------------------
+additional_positive_images: ['P063.bmp', 'P064.bmp', 'P071.bmp', 'P072.bmp', 'P076.bmp', 'P079.bmp', 'P081.bmp', 'P085.bmp', 'P092.bmp', 'P096.bmp', 'P097.bmp', 'P101.bmp', 'P104.bmp', 'P106.bmp', 'P107.bmp', 'P112.bmp', 'P116.bmp', 'P118.bmp', 'P122.bmp', 'P127.bmp']
+additional_neutral_images: ['N073.bmp', 'N075.bmp', 'N076.bmp', 'N080.bmp', 'N081.bmp', 'N082.bmp', 'N087.bmp', 'N089.bmp', 'N090.bmp', 'N091.bmp', 'N093.bmp', 'N094.bmp', 'N098.bmp', 'N099.bmp', 'N100.bmp', 'N102.bmp', 'N104.bmp', 'N105.bmp', 'N107.bmp', 'N111.bmp']
+additional_snake_images: ['Sn080.bmp', 'Sn084.bmp', 'Sn096.bmp', 'Sn112.bmp', 'Sn119.bmp']
+additional_spider_images: ['Sp094.bmp', 'Sp096.bmp', 'Sp102.bmp', 'Sp117.bmp', 'Sp130.bmp']
+additional_human_concerns_images: ['H020.bmp', 'H106.bmp', 'H110.bmp', 'H112.bmp', 'H123.bmp']
+additional_animal_concerns_images: ['A060.bmp', 'A062.bmp', 'A063.bmp', 'A068.bmp', 'A094.bmp']
+
+# ---------------------------------------------------
+# Cross image (for study and test phase)
+# ---------------------------------------------------
+cross_image_path: /home/prietoab/sussuarana/clientes/davi/imagens/
+cross_image_name: cross.jpg
+
+# ---------------------------------------------------
+# Catch stimuli images for study test phase
+# ---------------------------------------------------
+catch_stimuli_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/
+catch_stimuli_images_list: ['bird_caricature.jpeg', 'camel_caricature.jpeg', 'smiling_shark.jpeg', 'squirrel_holding_a_gun.jpeg', 'tiger_caricature.jpeg']

@@ -1,0 +1,47 @@
+# ---------------------------------------------
+# Image delay (In milliseconds)
+# ---------------------------------------------
+image_delay_correction_factor: 0.98
+study_phase_central_fixation_cross_delay: 1000
+study_phase_to_be_studied_image_delay: 2000
+
+test_phase_central_fixation_cross_delay: 1000
+test_phase_catch_stimuli_image_delay: 5000
+
+# ---------------------------------------------------
+# Images Path
+# ---------------------------------------------------
+GAPED_positive_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/P/
+GAPED_neutral_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/N/
+GAPED_snakes_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/Sn/
+GAPED_spiders_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/Sp/
+GAPED_human_concerns_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/H/
+GAPED_animal_concerns_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/A/
+buffer_stimuli_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/N/
+catch_stimuli_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/catch_images/
+cross_image_path: /home/prietoab/sussuarana/clientes/davi/imagens/cross/
+cross_image_name: "cross.jpg"
+
+# ---------------------------------------------------
+# Number of images
+# ---------------------------------------------------
+study_phase_positive_images_quantity: 4
+study_phase_neutral_images_quantity: 4
+study_phase_negative_human_images_quantity: 1
+study_phase_negative_animal_images_quantity: 1
+study_phase_negative_spider_images_quantity: 1
+study_phase_negative_snake_images_quantity: 1
+study_phase_negative_all_images_quantity: 4
+study_phase_buffer_images_quantity: 2
+test_phase_catch_images_quantity: 5
+
+
+# study_phase_positive_images_quantity: 40
+# study_phase_neutral_images_quantity: 40
+# study_phase_negative_human_images_quantity: 15
+# study_phase_negative_animal_images_quantity: 15
+# study_phase_negative_spider_images_quantity: 5
+# study_phase_negative_snake_images_quantity: 5
+# study_phase_negative_all_images_quantity: 40
+# study_phase_buffer_images_quantity: 8
+# test_phase_catch_images_quantity: 5

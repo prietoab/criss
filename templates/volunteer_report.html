@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+</head>        
+<body >
+
+    <h1>Parabéns, participante {{ volunteer_id }}!</h1>
+
+    <p>Você concluiu o desafio de memória. Veja abaixo como você se saiu.</p>
+
+    <h2>Quanto tempo você gastou fazendo o teste?</h2>
+    <p>Você gastou {{ minutes }} minutos e {{seconds}} segundos para finalizar o desafio.</p>
+    
+    <h2>Como você foi no geral?</h2>
+    <ul>
+        <li>Você teve contato com {{images_count}} imagens.</li>
+        <li>Acertou {{right_answers_count}}!</li>
+        <li>O que representa {{overall_result_percentage}}% do total!</li>
+    </ul>
+
+    <h2>Qual tipo de imagem você lembrou mais?</h2>
+
+    <table border="1">
+        <tr>
+            <th>Tipo de imagem</th>
+            <th>Qtde. acertos</th>
+            <th>Qtde. Imagens</th>
+            <th>Porcentagem de acerto</th>
+        </tr>
+        <tr>
+            <td>{{tipo_imagem_01_classe}}</td>
+            <td>{{tipo_imagem_01_qtde_acertos}}</td>
+            <td>{{tipo_imagem_01_qtde_imagens}}</td>
+            <td>{{tipo_imagem_01_qtde_porcentagem_acertos}}%</td>
+        </tr>
+        <tr>
+            <td>{{tipo_imagem_02_classe}}</td>
+            <td>{{tipo_imagem_02_qtde_acertos}}</td>
+            <td>{{tipo_imagem_02_qtde_imagens}}</td>
+            <td>{{tipo_imagem_02_qtde_porcentagem_acertos}}%</td>
+        </tr>
+        <tr>
+            <td>{{tipo_imagem_03_classe}}</td>
+            <td>{{tipo_imagem_03_qtde_acertos}}</td>
+            <td>{{tipo_imagem_03_qtde_imagens}}</td>
+            <td>{{tipo_imagem_03_qtde_porcentagem_acertos}}%</td>
+        </tr>
+        <tr>
+            <td>{{tipo_imagem_04_classe}}</td>
+            <td>{{tipo_imagem_04_qtde_acertos}}</td>
+            <td>{{tipo_imagem_04_qtde_imagens}}</td>
+            <td>{{tipo_imagem_04_qtde_porcentagem_acertos}}%</td>
+        </tr>
+      </table>
+
+    <p> </p>
+    <button onclick="window.location.href='/shutdown_server';">
+        Encerrar experimento.
+    </button>
+</body>
+</html>
