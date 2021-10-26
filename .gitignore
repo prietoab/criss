@@ -1,0 +1,17 @@
+./ve/*
+./__pycache__/*
+study_phase_tests.py
+study_phase_tests.txt
+*.csv
+*.txt
+*.ods
+*.zip
+*.xlsx
+./notebooks/*
+*.bmp
+*.jpeg
+./git/*
+!criss_logo.jpeg
+!cross.bmp
+!cross.jpg
+
