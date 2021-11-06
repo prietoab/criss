@@ -1,0 +1,131 @@
+/** Reset de configuração **/
+* {
+    margin:0;
+    padding: 0;
+}
+
+/** Estilos básicos **/
+body {
+    background-color:#a1cf3c;
+    margin: 5vh;
+}
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+p, li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/** Seção Cabeçalho **/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.header img{
+    width: 40px;
+    margin: 15px;
+}
+
+.header h1{
+    color:#01116b;
+    font-size: 20px;
+}
+
+/** Seção Boas vindas **/
+.sub-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 15px;
+}
+
+.sub-text p{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 50%;
+}
+
+.sub-text h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    color: #a1cf3c;
+}
+
+/** Seção Instruções **/
+.instructions {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.instructions img{
+    width: 400px;
+    height: 400px;
+}
+
+.instructions-container{
+    flex-direction: column;
+}
+
+.instructions-container p{
+    margin-bottom: 15px;
+}
+
+.instructions-box{
+    padding: 10px;
+    border: #a1cf3c 1px solid;
+    border-radius: 15px;
+}
+
+.instructions-box h2{
+    text-transform: uppercase;
+    color: #01116b;
+    font-weight: 700;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    background: #a1cf3c;
+    text-align: center;
+  }
+
+td{
+    padding: 5px;
+}
+
+/** Seção Botão **/
+
+.proceed{
+    display: flex;
+    flex-direction: row;
+    background-color: #F8F5F5;
+    padding: 20px;
+}
+
+button{
+    background-color:#01116b;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 10px 60px;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+}
