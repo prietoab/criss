@@ -128,4 +128,5 @@ button{
     font-weight: 700;
     border-radius: 15px;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
