@@ -2,67 +2,49 @@
 <html>
 <head>
     <title>Fase 2 - Imagem</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" type="text/css" href="/estilos/style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+
+    </style>
 </head>
 <!-- <body style="background-color:black;"> /-->
 <!-- https://html-online.com/articles/image-align-center/ -->
 
-<style>
-    .question {
-        font-size:35px;
-        color:white;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .image {
-        display: table-cell;
-        width: 2000px;
-        height: 600px;
-        text-align: center;
-        vertical-align: middle;
-    }
 
-    .buttontable {
-        margin-left: auto;
-        margin-right: auto;
-        width:110px;
-    }
-
-    .horizontalbuttons {
-        display: table-cell;
-        width: 75px;
-        height: 40px;
-        text-align: center;
-        vertical-align: top;
-    }
-</style>
-
-<body style="background-color:black;">
-    <p class="question">Você viu esta imagem?</p>
-    <table class="buttontable">
-        <tr>
-          <td><button accesskey="s" class="horizontalbuttons" onclick="window.location.href='http://127.0.0.1:5000/test_phase_yes';">Sim</button></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td><button accesskey="n" class="horizontalbuttons" onclick="window.location.href='http://127.0.0.1:5000/test_phase_no';">Não</button></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td><button accesskey="p" class="horizontalbuttons" onclick="window.location.href='http://127.0.0.1:5000/test_phase_check_point';">Ponto de checagem</button></td>
-        </tr>
-    </table>
+<body>
+    <div class="main-container">
+        <div class="header-test-phase">
+            <div class="logo-criss">
+                <img src="/static/criss_logo.jpeg" alt="logo criss">
+                <div>
+                    <p>Estudo sobre</p>
+                    <h1>Memoria visual</h1>
+                </div>
+            </div>
+    
+            <div class="logo-inst">
+                <img src="/static/UNICAMP_logo.png" alt="logo unicamp">
+                <img src="/static/logo-ifch.png" alt="logo ifch">
+            </div>
+        </div>
         
-    <figure class="image">
-        <img src="{{ url_for('static', filename=image_full_name)}}">
-    </figure>    
+        <div class="phase2">
+            <p>Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
+            <!-- <img src="/static/img-test.jpg" alt="imagem test"> -->
+            <img src="{{ url_for('static', filename=image_full_name)}}">
+    
+            <div class="buttontable">
+                <button accesskey="s" class="horizontalbuttons" id="sim" onclick="window.location.href='http://127.0.0.1:5000/test_phase_yes';">Sim</button></td>
+                <button accesskey="n" class="horizontalbuttons" id="não" onclick="window.location.href='http://127.0.0.1:5000/test_phase_no';">Não</button></td>
+                <button accesskey="p" class="horizontalbuttons" id="ponto" onclick="window.location.href='http://127.0.0.1:5000/test_phase_check_point';">Ponto de checagem</button>
+            </div>
+        </div>
 
+    </div>  
 </body>
 </html>

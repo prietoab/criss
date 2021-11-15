@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html>
-<center>
 <head>
     <title>Fase Teste</title>
+    <link rel="stylesheet" type="text/css" href="/estilos/style.css" media="screen" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>        
 <body >
-    <h1>Bem-vindo à Fase Teste!</h1>
-	<p><img src="/static/criss_logo.jpeg"></p>
-    <h2>INSTRUÇÕES</h2>
-    <h2> Por favor, em relação à pergunta "Você viu esta imagem?", responda "sim" ou "não", clicando nos respectivos botões. </h2>
-    <button onclick="window.location.href='/test_phase_next_image';">
-        INICIAR FASE TESTE
-    </button>
+    <div class="main-container">
+        <div class="header-test-phase">
+            <div class="logo-criss">
+                <img src="/static/criss_logo.jpeg" alt="logo criss">
+                <div>
+                    <p>Estudo sobre</p>
+                    <h1>Memoria visual</h1>
+                </div>
+            </div>
+
+            <div class="logo-inst">
+                <img src="/static/UNICAMP_logo.png" alt="logo unicamp">
+                <img src="/static/logo-ifch.png" alt="logo ifch">
+            </div>
+        </div>
+
+        <div class="etapa2-instructions">
+            <div>
+                <h1>Instruções Etapa 2</h1>
+                <p> Nessa etapa, serão exibidas imagens novamente, acompanhadas de um questionamento se você se lembra da imagem ou não. Você deve clicar no botão “Sim” ou “Não” para responder e avançar no experimento.</p>
+            </div>
+
+            <div class="etapa2-box">
+                <p>Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
+                <img src="/static/img-test.jpg" alt="imagem referencia">
+                <div>
+                    <button id="sim">Sim</button>
+                    <button id="não">Não</button>
+                </div>
+            </div>
+
+            <div>
+                <button onclick="window.location.href='/test_phase_next_image';">
+                    CONTINUAR
+                </button>
+            </div>
+        </div>
+    </div>
+
 </body>
-</center>
 </html>
