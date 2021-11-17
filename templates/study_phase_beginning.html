@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html>
-<center>
 <head>
     <title>Cognitive Response for Image Stimuli Software</title>
+    <link rel="stylesheet" type="text/css" href="/estilos/style.css" media="screen" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>        
 <body >
-    <h1>CRISS v1.0 - Cognitive Response for Image Stimuli Software</h1>
-	<p><img src="/static/criss_logo.jpeg"></p>
-    <h1>Bem-vindo ao estudo sobre memória visual</h1>
-    <h2>Instruções:</h2>
-    <p>Observe a sequência de imagens a seguir com a máxima atenção. 
-	Esta parte do estudo dura aproximadamente 6 minutos.</p>
-    <button onclick="window.location.href='/study_phase_next_image';">
-        INICIAR
-    </button>
+    <div class="main-container">
+        <div class="header">
+            <p>CRISS v1.0 - Cognitive Response for Image Stimuli Software</p>
+            <div>
+                <img src="/static/UNICAMP_logo.png" alt="logo unicamp">
+                <img src="/static/logo-ifch.png" alt="logo ifch">
+            </div>
+        </div>
+
+        <div class="instructions">
+            <img src="/static/criss_logo.jpeg">
+
+            <div class="instructions-container">
+                <div class="sub-text">
+                    <p>Bem-vindo ao</p>
+                    <h1>estudo sobre memória visual</h1>
+                </div>
+                <p>Esse é um estudo desenvolvido no departamento XXX do Instituto de Filosofia e Ciências Humanas (IFCH) da UNICAMP. Os dados aqui obtidos serão analisados anonimamente e para fins de pesquisa acadêmica, contribuindo para publicação de uma tese.</p>
+                    <div class="instructions-box">
+                        <h2>Instruções:</h2>
+
+                        <table>
+                            <tr>
+                                <td><div class="circle"> <h3>1</h3></div></td>
+                                <td><p>Na primeira etapa do experimento você será apresentado à uma sequência de imagens, essa etapa durará cerca de 6 minutos</p></td>
+                            </tr>
+                            <tr>
+                                <td><div class="circle"><h3>2</h3></div></td>
+                                <td><p>Durante esse momento, basta que preste atenção às imagens exibidas</p></td>
+                            </tr>
+                            <tr>
+                                <td><div class="circle"><h3>3</h3></div></td>
+                                <td><p>Após observar as imagens, na segunda etapa você será convidado a responder sobre ter visto ou não a imagem específica</p></td>
+                            </tr>                           
+                        </table>
+                    </div>
+            </div>
+        </div>
+
+        <div class="proceed">
+            <p>Conforme você avança no formulário, as orientações serão reforçadas. Ao clicar no botão “iniciar” e seguir com a participação no estudo você concorda em ceder os dados para análise da pesquisa.</p>
+            <button class="btn" onclick="window.location.href='/study_phase_next_image';">
+                INICIAR
+            </button>
+        </div>
+    </div>
 </body>
-</center>
 </html>
