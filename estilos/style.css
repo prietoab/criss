@@ -51,7 +51,7 @@ p, li{
 }
 
 .header p{
-    color:#01116b;
+    color:#30016B;
     font-size: 15px;
 }
 
@@ -107,7 +107,7 @@ p, li{
 
 .instructions-box h2{
     text-transform: uppercase;
-    color: #01116b;
+    color: #30016B;
     font-weight: 700;
 }
 
@@ -136,7 +136,7 @@ td{
 }
 
 button{
-    background-color:#01116b;
+    background-color:#30016B;
     border: none;
     color: white;
     text-align: center;
@@ -220,35 +220,41 @@ Seção header **/
 /** Seção Instruções **/
 .etapa2-instructions{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    flex-direction: row;
     margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10px;
+    margin-right: 1px;
+}
+
+.etapa2-text{
+    justify-content: left;
+    margin-right: 30px;
 }
 
 .etapa2-instructions h1{
     text-transform: uppercase;
     font-weight: 700;
-    color:#01116b;
+    color:#30016B;
 }
 
 .etapa2-instructions button{
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 5px 35px;
 }
 
 .etapa2-box{
     background-color: rgb(241, 240, 240);
+    font-style: italic;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 15px 100px;
-    padding: 20px 20px;
+    width: 100vw;
+    margin: 15px 15px;
+    padding: 20px 10px;
 }
 
 .etapa2-box img{
-    width: 20vh;
-    margin: 10px;
+    width: 30vh;
+    margin: 5px;
 }
 
 #sim{
@@ -303,6 +309,7 @@ Seção mensagem final **/
     background-color: #F8F5F5;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 50px;
 }
 
 .box-text{
@@ -313,14 +320,114 @@ Seção mensagem final **/
 .box-text h1{
     text-transform: uppercase;
     font-weight: 700;
-    color: #01116b;
+    color: #30016B;
 }
 
 .box-text button{
     margin-top: 30px;
     text-transform: uppercase;
     background-color: #a1cf3c;
-    color: #01116b;
+    color: #30016B;
     padding: 5px 20px;
     font-size: 20px;
+}
+
+/** 6- Página de relatório **/
+.container-infos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.infos-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.infos-text h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #30016B;
+    font-size: 25px;
+}
+
+.infos-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F5F5;
+    justify-content: space-around;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+    flex-direction: row;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: #a1cf3c solid 0.5px;
+    border-radius: 10px;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.box h2{
+    color: #a1cf3c;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.box h1{
+    color: #30016B;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.box p{
+    color: #30016B;
+    font-weight: 400;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    line-height: 0px;
+}
+
+.table th{
+    background-color: #30016B;
+    color: #a1cf3c;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.table td{
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 700;
+    border: #a1cf3c solid 0.2px;
+    color: #30016B;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.table .img-category{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-size: 15px;
+    padding-left: 10px;
+    color: #a1cf3c;
+    font-weight: 400;
 }

@@ -35,12 +35,12 @@
         
         <div class="phase2">
             <p>Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
-            <!-- <img src="/static/img-test.jpg" alt="imagem test"> -->
-            <img src="{{ url_for('static', filename=image_full_name)}}">
+            <img src="/static/img-test.jpg" alt="imagem test">
+            <!-- <img src="{{ url_for('static', filename=image_full_name)}}"> -->
     
             <div class="buttontable">
-                <button accesskey="s" class="horizontalbuttons" id="sim" onclick="window.location.href='http://127.0.0.1:5000/test_phase_yes';">Sim</button></td>
-                <button accesskey="n" class="horizontalbuttons" id="não" onclick="window.location.href='http://127.0.0.1:5000/test_phase_no';">Não</button></td>
+                <button accesskey="s" class="horizontalbuttons" id="sim" onclick="window.location.href='http://127.0.0.1:5000/test_phase_yes';">Sim</button>
+                <button accesskey="n" class="horizontalbuttons" id="não" onclick="window.location.href='http://127.0.0.1:5000/test_phase_no';">Não</button>
                 <button accesskey="p" class="horizontalbuttons" id="ponto" onclick="window.location.href='http://127.0.0.1:5000/test_phase_check_point';">Ponto de checagem</button>
             </div>
         </div>
