@@ -5,54 +5,54 @@ GAPED_positive_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPE
 GAPED_snakes_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/Sn/
 GAPED_spiders_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/Sp/
 additional_animal_concerns_images:
-- A059.bmp
+- A105.bmp
 additional_human_concerns_images:
-- H001.bmp
+- H088.bmp
 additional_neutral_images:
-- N009.bmp
-- N024.bmp
-- N021.bmp
-- N036.bmp
+- N016.bmp
+- N082.bmp
+- N004.bmp
+- N068.bmp
 additional_positive_images:
-- P057.bmp
-- P015.bmp
-- P114.bmp
-- P124.bmp
+- P104.bmp
+- P010.bmp
+- P036.bmp
+- P017.bmp
 additional_snake_images:
-- Sn018.bmp
+- Sn059.bmp
 additional_spider_images:
-- Sp155.bmp
+- Sp117.bmp
 buffer_stimuli_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/GAPED_imagens/N/
 catch_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/catch_images/
 catch_stimuli_images_list:
+- tiger_caricature.jpeg
 - bird_caricature.jpeg
 - smiling_shark.jpeg
 - squirrel_holding_a_gun.jpeg
 - camel_caricature.jpeg
-- tiger_caricature.jpeg
 catch_stimuli_images_path: /home/prietoab/sussuarana/clientes/davi/imagens/catch_images/
 cross_image_name: cross.jpg
 cross_image_path: /home/prietoab/sussuarana/clientes/davi/imagens/cross/
 selected_animal_concerns_images:
-- A122.bmp
+- A104.bmp
 selected_buffer_stimuli_images:
-- N006.bmp
-- N067.bmp
+- N083.bmp
+- N077.bmp
 selected_human_concerns_images:
-- H022.bmp
+- H058.bmp
 selected_neutral_images:
-- N089.bmp
-- N092.bmp
-- N047.bmp
-- N061.bmp
+- N080.bmp
+- N105.bmp
+- N067.bmp
+- N031.bmp
 selected_positive_images:
-- P008.bmp
-- P038.bmp
-- P013.bmp
-- P105.bmp
+- P020.bmp
+- P079.bmp
+- P116.bmp
+- P109.bmp
 selected_snake_images:
-- Sn097.bmp
+- Sn069.bmp
 selected_spider_images:
-- Sp023.bmp
-user_id: 123
-user_random_seed: 123
+- Sp001.bmp
+user_id: 1
+user_random_seed: 1
