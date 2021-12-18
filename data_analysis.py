@@ -209,5 +209,5 @@ class DataAnalysis():
         self.volunteers_data.to_excel(excel_file_name, index_label="dataset_index")
         print("[save_volunteers_excel] " + excel_file_name + " has been created.")
         self.last_volunteers_file_name_excel = excel_file_name
-        
-        return excel_file_name 
+
+        return excel_file_name
