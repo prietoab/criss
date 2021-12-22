@@ -1,6 +1,6 @@
 ./ve/*
-./venv
-./__pycache__
+venv
+__pycache__
 study_phase_tests.py
 study_phase_tests.txt
 *.csv
