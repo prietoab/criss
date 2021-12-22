@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Resultados</title>
-    <link rel="stylesheet" type="text/css" href="/estilos/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}" media="screen" />
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,14 +34,14 @@
             <div class="infos-box">
                 <div class="box">
                     <h2>Tempo no Experimento</h2>
-                    <h1>15</h1>
-                    <!-- <h1>{{ minutes }}</h1> -->
+                    <!-- <h1>15</h1> -->
+                    <h1>{{ minutes }}</h1>
                     <p> minutos </p>
                 </div>
                 <div class="box">
                     <h2>Resultado Geral</h2>
-                    <h1>40%</h1>
-                    <!-- <h1>{{overall_result_percentage}}% </h1> -->
+                    <!-- <h1>40%</h1> -->
+                    <h1>{{overall_result_percentage}}% </h1>
                     <p>acertos</p>
                 </div>
                 <div class="table">
@@ -49,33 +49,33 @@
                     <table>
                         <tr>
                             <th>Tipo de imagem</th>
-                            <th>Imagem Exibida</th>
+                            <th>Quantidade exibida</th>
                             <th>Acertos</th>
                             <th>Porcentagem de acerto</th>
                         </tr>
                         <tr>
-                            <td class="img-category">Positiva</td>
-                            <td>8</td>
-                            <td>1</td>
-                            <td>20.0%</td>
+                            <td class="img-category">{{tipo_imagem_01_classe}}</td>
+                            <td>{{tipo_imagem_01_qtde_imagens}}</td>
+                            <td>{{tipo_imagem_01_qtde_acertos}}</td>
+                            <td>{{tipo_imagem_01_qtde_porcentagem_acertos}}%</td>
                         </tr>
                         <tr>
-                            <td class="img-category">Negativa</td>
-                            <td>8</td>
-                            <td>5</td>
-                            <td>62.5%</td>
+                            <td class="img-category">{{tipo_imagem_02_classe}}</td>
+                            <td>{{tipo_imagem_02_qtde_imagens}}</td>
+                            <td>{{tipo_imagem_02_qtde_acertos}}</td>
+                            <td>{{tipo_imagem_02_qtde_porcentagem_acertos}}%</td>
                         </tr>
                         <tr>
-                            <td class="img-category">Neutra</td>
-                            <td>8</td>
-                            <td>2</td>
-                            <td>25.0%</td>
+                            <td class="img-category">{{tipo_imagem_03_classe}}</td>
+                            <td>{{tipo_imagem_03_qtde_imagens}}</td>
+                            <td>{{tipo_imagem_03_qtde_acertos}}</td>
+                            <td>{{tipo_imagem_03_qtde_porcentagem_acertos}}%</td>
                         </tr>
                         <tr>
-                            <td class="img-category">Controle</td>
-                            <td>8</td>
-                            <td>4</td>
-                            <td>50.0%</td>
+                            <td class="img-category">{{tipo_imagem_04_classe}}</td>
+                            <td>{{tipo_imagem_04_qtde_imagens}}</td>
+                            <td>{{tipo_imagem_04_qtde_acertos}}</td>
+                            <td>{{tipo_imagem_04_qtde_porcentagem_acertos}}%</td>
                         </tr>
                     </table>
                 </div>
