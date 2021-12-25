@@ -4,34 +4,27 @@
 <head>
     <title>Index</title>
 </head>
-<!-- <body style="background-color:black;"> /-->
-<!-- https://html-online.com/articles/image-align-center/ -->
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-/*     .verticalhorizontal {
-        display: table-cell;
-        width: 2000px;
-        height: 850px;
-        text-align: center;
-        vertical-align: middle;
-    } */
     .verticalhorizontal {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        min-height: 100vh;
-        background-color: white;
+        min-height: 90vh;
+        background-color: black;
         margin: 5vh 5vh;
         border-radius: 15px;
     }
 
     img{
-        height: 70vh;
+        width: 640px;
+        height: 480px;
     }
 
     h1 {
@@ -46,18 +39,10 @@
         font-family: 'Open Sans', sans-serif;
     }
 </style>
-     
-        
-<body style="background-color:#a1cf3c">
-    <!--<p>Image full name         : {{ image_full_name }}</p>-->
-    <!--<p>Image delay (in seconds): {{ image_delay_seconds }}</p>-->
-    <div class="verticalhorizontal">
 
-        <h1>Etapa 1</h1>
-        <p> <strong>O experimento está em curso.</strong> Apenas preste atenção nas imagens que aparecerão em sequência abaixo:</p>
+<body style="background-color:black;">
+    <div class="verticalhorizontal">
         <img src="{{ url_for('static', filename=image_full_name)}}">
-        <!-- Imagem teste de configurações, pois não consegui rodas as imagens locais do projeto -->
-        <!-- <img src="/static/img-test.jpg"> -->
         <meta http-equiv="refresh" content="{{ image_delay_seconds }};url=http://127.0.0.1:5000/study_phase_next_image" />
     </div>    
 </body>
