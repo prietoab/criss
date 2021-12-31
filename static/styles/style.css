@@ -199,13 +199,13 @@ Seção header **/
     line-height: 65%;
 }
 
-.header-test-phase h1{
+/**.header-test-phase h1{
     text-transform: uppercase;
     font-size: 45px;
     font-weight: 700;
     line-height: 95%;
     color: #a1cf3c;
-}
+}**/
 
 .logo-criss{
     display: flex;
@@ -242,7 +242,7 @@ Seção header **/
     padding: 5px 35px;
 }
 
-.etapa2-box{
+/**.etapa2-box{
     background-color: rgb(241, 240, 240);
     font-style: italic;
     text-align: center;
@@ -250,21 +250,27 @@ Seção header **/
     width: 100vw;
     margin: 15px 15px;
     padding: 20px 10px;
-}
+}**/
 
 .etapa2-box img{
     width: 30vh;
     margin: 5px;
 }
 
-#sim{
+#yes{
     background-color: lawngreen;
     padding: 5px 20px;
     text-transform: uppercase;
 }
 
-#não{
+#no{
     background-color: red;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+
+#catch{
+    background-color: orange;
     padding: 5px 20px;
     text-transform: uppercase;
 }
