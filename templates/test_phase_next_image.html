@@ -1,50 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fase 2 - Imagem</title>
+    <title>Fase 2: Teste - Imagem</title>
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}" media="screen" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    
-    <style>
-
-    </style>
 </head>
-<!-- <body style="background-color:black;"> /-->
-<!-- https://html-online.com/articles/image-align-center/ -->
 
-
-<body>
-    <div class="main-container">
-        <div class="header-test-phase">
-            <div class="logo-criss">
-                <img src="/static/criss_logo.jpeg" alt="logo criss">
-                <div>
-                    <p>Estudo sobre</p>
-                    <h1>Memoria visual</h1>
-                </div>
-            </div>
-    
-            <div class="logo-inst">
-                <img src="/static/UNICAMP_logo.png" alt="logo unicamp">
-                <img src="/static/logo-ifch.png" alt="logo ifch">
-            </div>
-        </div>
-        
-        <div class="phase2">
-            <p>Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
-            <!-- <img src="/static/img-test.jpg" alt="imagem test">  -->
-            <img src="{{ url_for('static', filename=image_full_name)}}">
-    
+<body style="background-color:black;margin:0%">
+    <div class="main-container" style="background-color:black;">
+        <div  class="phase2">
+            <p style="color: white;font-size: 16pt;">Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
+            <img style="width: 640px;height: 480px;" src="{{ url_for('static', filename=image_full_name)}}">
             <div class="buttontable">
-                <button accesskey="s" class="horizontalbuttons" id="sim" onclick="window.location.href='http://127.0.0.1:5000/test_phase_yes';">Sim</button>
-                <button accesskey="n" class="horizontalbuttons" id="não" onclick="window.location.href='http://127.0.0.1:5000/test_phase_no';">Não</button>
-                <button accesskey="p" class="horizontalbuttons" id="ponto" onclick="window.location.href='http://127.0.0.1:5000/test_phase_check_point';">Ponto de checagem</button>
+                <button accesskey="s" class="horizontalbuttons" id="yes" onclick="window.location.href='http://127.0.0.1:5000/test_phase_yes';">Sim</button>
+                <button accesskey="n" class="horizontalbuttons" id="no" onclick="window.location.href='http://127.0.0.1:5000/test_phase_no';">Não</button>
+                <button accesskey="p" class="horizontalbuttons" id="catch" onclick="window.location.href='http://127.0.0.1:5000/test_phase_check_point';">Pegadinha</button>
             </div>
         </div>
-
     </div>  
 </body>
 </html>
