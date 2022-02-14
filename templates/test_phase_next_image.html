@@ -10,16 +10,16 @@
 </head>
 
 <body style="background-color:black;margin:0%">
-    <div class="main-container" style="background-color:black;">
-        <div  class="phase2">
-            <p style="color: white;font-size: 16pt;">Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
-            <img style="width: 640px;height: 480px;" src="{{ url_for('static', filename=image_full_name)}}">
-            <div class="buttontable">
-                <button accesskey="s" class="horizontalbuttons" id="yes" onclick="window.location.href='http://127.0.0.1:5000/test_phase_yes';">Sim</button>
-                <button accesskey="n" class="horizontalbuttons" id="no" onclick="window.location.href='http://127.0.0.1:5000/test_phase_no';">Não</button>
-                <button accesskey="p" class="horizontalbuttons" id="catch" onclick="window.location.href='http://127.0.0.1:5000/test_phase_check_point';">Pegadinha</button>
-            </div>
+
+    <div  class="phase2">
+        <p style="color: white;font-size: 16pt;">Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
+        <img style="width: 640px;height: 480px;" src="{{ url_for('static', filename=image_full_name)}}">
+        <div class="buttontable">
+            <button accesskey="s" class="horizontalbuttons" id="yes" onclick="window.location.href='http://127.0.0.1:5000/test_phase_yes';">Sim</button>
+            <button accesskey="n" class="horizontalbuttons" id="no" onclick="window.location.href='http://127.0.0.1:5000/test_phase_no';">Não</button>
+            <button accesskey="p" class="horizontalbuttons" id="catch" onclick="window.location.href='http://127.0.0.1:5000/test_phase_check_point';">Pegadinha</button>
         </div>
-    </div>  
+    </div>
+
 </body>
 </html>

@@ -25,19 +25,34 @@
             </div>
         </div>
 
+
         <div class="etapa2-instructions">
             <div class="etapa2-text">
                 <h1>Instruções Etapa 2</h1>
-                <p> Nessa etapa, serão exibidas imagens novamente, acompanhadas de um questionamento se você se lembra da imagem ou não, conforme exemplo ao lado. Você deve clicar no botão “Sim” ou “Não” para responder e avançar no experimento.</p> <br>
-                <p> O botão "Ponto de checagem" servirá para XXXXXXX. </p> <br>
-                <p>Ao clicar no botão "Continuar" você iniciará a etapa 2, que não tem tempo limite para ser completada.</p> <br>
+             
+                <div>
+                    <p> Nessa etapa, serão exibidas imagens novamente, acompanhadas de um questionamento se você se lembra da imagem ou não, conforme exemplo ao lado. Você deve clicar no botão “Sim” ou “Não” para responder e avançar no experimento.</p> <br>
+                    <p> O botão "Ponto de checagem" servirá para XXXXXXX. </p> <br>
+                    <p>Ao clicar no botão "Continuar" você iniciará a etapa 2, que não tem tempo limite para ser completada.</p> <br>
+                </div>
+
+                <div  class="phase2 phase2-sample">
+                    <p style="color: white;font-size: 16pt;">Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
+                    <img style="height: 300px;" src="/static/img-test.jpg">
+                    <div class="buttontable">
+                        <button accesskey="s" class="horizontalbuttons" id="yes" >Sim</button>
+                        <button accesskey="n" class="horizontalbuttons" id="no" >Não</button>
+                        <button accesskey="p" class="horizontalbuttons" id="catch" >Pegadinha</button>
+                    </div>
+                </div>
+             
                 <div>
                     <button onclick="window.location.href='/test_phase_next_image';">
                         CONTINUAR
                     </button>
                 </div>
             </div>
-
+<!-- 
             <div class="etapa2-box">
                 <p>Você viu a imagem abaixo durante a primeira etapa do experimento?</p>
                 <img src="/static/img-test.jpg" alt="imagem referencia">
@@ -45,7 +60,7 @@
                     <button id="sim">Sim</button>
                     <button id="não">Não</button>
                 </div>
-            </div>
+            </div> -->
 
 
         </div>
