@@ -17,3 +17,4 @@ study_phase_tests.txt
 !cross.jpg
 ./.ipynb_checkpoints/*
 ./notebooks/.ipynb_checkpoints/*
+!requirements.txt
