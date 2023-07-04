@@ -1,5 +1,5 @@
 from os import name
-from pandas import read_csv, DataFrame
+from pandas import read_csv, DataFrame, concat
 from datetime import datetime
 
 class VolunteerResultsReport():
@@ -98,7 +98,7 @@ class VolunteerResultsReport():
     #-------------------------------------------------------------------------
     def label_right_answers(self):
     #-------------------------------------------------------------------------
-    
+
         self.df_log['image_class'] = self.df_log['image_type'].apply(self.get_image_class)
 
         is_test_phase = self.df_log['phase_name'] == 'test_phase'
@@ -133,8 +133,20 @@ class VolunteerResultsReport():
     #-------------------------------------------------------------------------
     def get_overall_result(self):
     #-------------------------------------------------------------------------
-        images_count = self.df_test_answers.shape[0]
-        right_answers_count = self.df_test_answers['is_right_answer'].sum()
+
+        m_study_phase_images = (
+            (self.df_test_answers["phase_name"] == "test_phase")
+            & (self.df_test_answers["in_study_phase"] == "True")
+        )
+        images_count = sum(m_study_phase_images)
+
+        m_right_answers = (
+            (self.df_test_answers["phase_name"] == "test_phase")
+            & (self.df_test_answers["in_study_phase"] == "True")
+            & (self.df_test_answers["is_right_answer"] == True)
+        )
+        right_answers_count = sum(m_right_answers)
+
         wrong_answers_count = images_count - right_answers_count
         overall_result_ratio = (right_answers_count / images_count)
         overall_result_percentage = overall_result_ratio*100.0
@@ -152,10 +164,39 @@ class VolunteerResultsReport():
     #-------------------------------------------------------------------------
     def get_result_per_class(self):
     #-------------------------------------------------------------------------
-        df_groupby_image_class = self.df_test_answers.groupby(['image_class'])
-        df_result_per_class = DataFrame(df_groupby_image_class['is_right_answer'].sum())
-        df_result_per_class['count'] = df_groupby_image_class['is_right_answer'].count()
-        df_result_per_class['right_perc'] = (df_result_per_class['is_right_answer'] / df_result_per_class['count'])*100.0
+        m_study_phase_images = (
+            (self.df_test_answers["phase_name"] == "test_phase")
+            & (self.df_test_answers["in_study_phase"] == "True")
+            & (self.df_test_answers["event_type"] == "answer")
+        ) 
+
+        df_study_phase_images = self.df_test_answers[m_study_phase_images]
+
+        m_catch_image = (
+            (self.df_test_answers["phase_name"] == "test_phase")
+            & (self.df_test_answers["in_study_phase"] == "False")
+            & (self.df_test_answers["image_type"] == "catch_stimuli")
+        ) 
+
+        df_catch_image = self.df_test_answers[m_catch_image]
+
+        df_images = concat([df_study_phase_images, df_catch_image]).sort_values(by="event_seq")
+
+        df_result_per_class = (
+            df_images
+                .groupby("image_class")
+                .agg({
+                    "is_right_answer": "sum",
+                    "event_seq":"count"
+                })
+                .rename({"event_seq":"count"}, axis=1)
+        )
+
+        df_result_per_class["right_perc"] = (
+            100.0*(df_result_per_class["is_right_answer"]
+            / df_result_per_class["count"])
+        ).round(1)
+
         result_per_class_records = self.get_result_per_class_records(df_result_per_class)
         return df_result_per_class, result_per_class_records
     
