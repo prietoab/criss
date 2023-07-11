@@ -173,10 +173,10 @@ def test_phase_check_point():
 @app.route('/shutdown_server')
 def shutdown_server():
 # ----------------------------------------------------------------------
-    func = request.environ.get('werkzeug.server.shutdown')
-    if func is None:
-        raise RuntimeError('Not running with the Werkzeug Server')
-    func()
+    # func = request.environ.get('werkzeug.server.shutdown')
+    # if func is None:
+    #     raise RuntimeError('Not running with the Werkzeug Server')
+    # func()
     return render_template('server_stopped.html')
 
 
