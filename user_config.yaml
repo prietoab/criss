@@ -5,79 +5,79 @@ GAPED_positive_images_path: /home/criss/Imagens/GAPED_dev/P/
 GAPED_snakes_images_path: /home/criss/Imagens/GAPED_dev/Sn/
 GAPED_spiders_images_path: /home/criss/Imagens/GAPED_dev/Sp/
 additional_animal_concerns_images:
-- A054.jpg
-- A124.jpg
+- A100.jpg
+- A058.jpg
 additional_human_concerns_images:
-- H052.jpg
-- H122.jpg
+- H103.jpg
+- H104.jpg
 additional_neutral_images:
-- N028.jpg
-- N087.jpg
-- N069.jpg
-- N102.jpg
-- N011.jpg
+- N004.jpg
+- N043.jpg
 - N107.jpg
-- N002.jpg
-- N080.jpg
+- N102.jpg
+- N028.jpg
+- N039.jpg
+- N023.jpg
+- N068.jpg
 additional_positive_images:
-- P010.jpg
-- P084.jpg
-- P077.jpg
-- P052.jpg
-- P066.jpg
-- P082.jpg
+- P003.jpg
 - P114.jpg
-- P125.jpg
+- P076.jpg
+- P082.jpg
+- P084.jpg
+- P081.jpg
+- P052.jpg
+- P010.jpg
 additional_snake_images:
-- Sn127.jpg
+- Sn010.jpg
 - Sn025.jpg
 additional_spider_images:
-- Sp035.jpg
-- Sp116.jpg
+- Sp096.jpg
+- Sp150.jpg
 buffer_stimuli_images_path: /home/criss/Imagens/GAPED_dev/N/
 catch_images_path: /home/criss/Imagens/catch/
 catch_stimuli_images_list:
-- tiger.jpeg
-- dinosaur.jpeg
-- bird.jpeg
 - shark.jpeg
+- bird.jpeg
+- dinosaur.jpeg
+- tiger.jpeg
 catch_stimuli_images_path: /home/criss/Imagens/catch/
 cross_image_name: cross.jpg
 cross_image_path: /home/criss/Imagens/cross/
 selected_animal_concerns_images:
-- A058.jpg
-- A100.jpg
+- A054.jpg
+- A124.jpg
 selected_buffer_stimuli_images:
-- N024.jpg
+- N091.jpg
 - N034.jpg
-- N043.jpg
-- N039.jpg
+- N080.jpg
+- N087.jpg
 selected_human_concerns_images:
-- H103.jpg
-- H104.jpg
+- H122.jpg
+- H052.jpg
 selected_neutral_images:
-- N004.jpg
+- N024.jpg
+- N069.jpg
+- N097.jpg
 - N008.jpg
 - N090.jpg
 - N096.jpg
-- N097.jpg
-- N091.jpg
-- N068.jpg
-- N023.jpg
+- N011.jpg
+- N002.jpg
 selected_positive_images:
-- P076.jpg
-- P081.jpg
-- P034.jpg
-- P087.jpg
-- P127.jpg
 - P037.jpg
 - P018.jpg
-- P003.jpg
+- P077.jpg
+- P034.jpg
+- P127.jpg
+- P125.jpg
+- P087.jpg
+- P066.jpg
 selected_snake_images:
-- Sn010.jpg
 - Sn035.jpg
+- Sn127.jpg
 selected_spider_images:
-- Sp096.jpg
-- Sp150.jpg
-user_id: 4
-user_random_seed: 4
+- Sp116.jpg
+- Sp035.jpg
+user_id: 1
+user_random_seed: 1

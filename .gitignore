@@ -1,5 +1,6 @@
 ./ve/*
 venv
+./venv/*
 __pycache__
 study_phase_tests.py
 study_phase_tests.txt
@@ -8,7 +9,7 @@ study_phase_tests.txt
 *.ods
 *.zip
 *.xlsx
-./notebooks/*
+*.ipynb
 *.bmp
 *.jpg
 *.jpeg
@@ -17,5 +18,5 @@ study_phase_tests.txt
 !cross.bmp
 !cross.jpg
 ./.ipynb_checkpoints/*
-./notebooks/.ipynb_checkpoints/*
 !requirements.txt
+
