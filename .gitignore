@@ -10,6 +10,7 @@ study_phase_tests.txt
 *.xlsx
 ./notebooks/*
 *.bmp
+*.jpg
 *.jpeg
 ./git/*
 !criss_logo.jpeg
