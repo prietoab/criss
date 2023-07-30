@@ -44,8 +44,8 @@ p, li{
 }
 
 .header img{
-    width: 40px;
-    margin: 15px;
+    width: 56px;
+    margin: 21px;
     object-fit: contain;
 }
 
@@ -79,7 +79,7 @@ p, li{
 
 /** Seção Instruções **/
 .instructions {
-    margin-top: 15px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
 }
@@ -95,7 +95,7 @@ p, li{
 }
 
 .instructions-container p{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .instructions-box{
@@ -118,7 +118,7 @@ p, li{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .instructions-box li p{
@@ -147,7 +147,7 @@ td{
     justify-content: space-between;
     background-color: #F8F5F5;
     padding: 20px 50px;
-    margin-top: 15px;
+    margin-top: 45px;
 }
 
 .proceed .btn{
@@ -159,8 +159,8 @@ button{
     border: none;
     color: white;
     text-align: center;
-    padding: 5px 20px;
-    font-size: 20px;
+    padding: 7px 28px;
+    font-size: 21px;
     font-weight: 700;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
@@ -245,12 +245,12 @@ Seção header **/
 .etapa2-instructions{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 90px;
     margin-right: 1px;
 }
 .phase2-sample {
-  margin: 20px 0;
+  margin: 5px 0;
 }
 .etapa2-text{
     justify-content: left;
@@ -265,7 +265,7 @@ Seção header **/
 
 .etapa2-instructions button{
     margin-top: 5px;
-    padding: 5px 35px;
+    padding: 10px 35px;
 }
 
 /**.etapa2-box{
@@ -279,8 +279,8 @@ Seção header **/
 }**/
 
 .etapa2-box img{
-    width: 30vh;
-    margin: 5px;
+    width: 60vh;
+    margin: 15px;
 }
 
 #yes{
@@ -318,7 +318,7 @@ Seção header **/
 }
 
 .phase2 img{
-    height: 60vh;
+    height: 50vh;
     margin-bottom: 20px;
 }
 
@@ -343,7 +343,7 @@ Seção mensagem final **/
     background-color: #F8F5F5;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .box-text{
